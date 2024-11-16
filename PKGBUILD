@@ -7,9 +7,10 @@
 _proj="vim"
 _pkg="javascript"
 _pkgname="${_proj}-${_pkg}"
-pkgname="${_pkgname}-git"
-_branch=master
-pkgver=0.1.0.r4.ge628cba
+pkgname="${_pkgname}"
+_branch="master"
+pkgver=1.2.2.r582.gc470ce1
+_commit='c470ce1399a544fe587eab950f571c83cccfbbdc'
 pkgrel=1
 pkgdesc="Vastly improves Vim's JavaScript indentation"
 arch=(
@@ -27,14 +28,12 @@ depends=(
 makedepends=(
   'git'
 )
-provides=(
-  "${_pkgname}=${pkgver}"
-)
-conflicts=(
-  "${_pkgname}"
-)
+_tag_name="commit"
+_tag="${_commit}"
+_tag_name="branch"
+_tag="${_branch}"
 source=(
-  "git+${url}.git#branch=${_branch}"
+  "git+${url}.git#${_tag_name}=${_tag}"
 )
 sha512sums=(
   'SKIP'
