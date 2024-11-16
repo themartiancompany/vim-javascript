@@ -1,4 +1,4 @@
-# `vim-javascript-git`
+# `vim-javascript`
 
 universal recipe for [user repo](../themartiancompany/ur).
 
